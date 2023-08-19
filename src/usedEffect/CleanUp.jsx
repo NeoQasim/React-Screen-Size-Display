@@ -2,12 +2,14 @@ import React, { useEffect, useState, } from 'react'
 import UseEffect from './UseEffect'
 
 const CleanUp = () => {
-    const [size, setsize] = useState(window.innerWidth)
+    const [width, setWidth] = useState(window.innerWidth)
+    const [height, setHeight] = useState(window.innerHeight)
     const windowSize = () => {
 
-        setsize(window.innerWidth)
-    }
+        setWidth(window.innerWidth)
+        setHeight(window.innerHeight)
 
+    }
 
     useEffect(() => {
         window.addEventListener("resize", windowSize)
@@ -22,7 +24,7 @@ const CleanUp = () => {
         <>
             <div>CleanUp  Working </div>
             <center>
-                <h1> Window Size : <span>{size}</span></h1>
+                <h1>The Size of Your windowis  Size : <span>{width} x {height} </span></h1>
             </center>
 
 
