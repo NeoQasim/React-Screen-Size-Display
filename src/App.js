@@ -1,14 +1,11 @@
 import React from 'react'
-// import UseEffect from './usedEffect/UseEffect'
-import CleanUp from './usedEffect/CleanUp'
+import Api_Data from './api_fetch/Api_Data'
 
 const App = () => {
   return (
     <>
       <div>App  working fine </div>
-
-      {/* <UseEffect /> */}
-      <CleanUp />
+      <Api_Data />
 
     </>
   )
